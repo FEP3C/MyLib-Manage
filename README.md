@@ -2,7 +2,7 @@
 
 这是一个基于Python编写的简单图书管理系统，使用rich库美化输出，数据存储于json文件，通过命令行界面（CLI）实现图书记录的增删查操作。
 
-＃＃功能特性
+## 功能特性
 
 	•	数据存储：图书数据持久化保存在library_data.json文件中，便于数据管理和跨会话使用。
 	•	美化输出：利用rich库呈现美观、易读的表格形式展示图书记录。
@@ -15,7 +15,7 @@
 确保已安装Python环境，然后使用pip安装所需库：
 
 ```Python
-pip install rich
+pip install rich argparse
 ```
 
 2. 运行程序
@@ -23,13 +23,13 @@ pip install rich
 将本项目克隆至本地或下载源码文件，进入项目目录，执行以下命令启动图书管理系统：
 
 ```Bash
-python main.py
+python mylib_manage.py
 ```
 
 或指定具体的Python解释器路径：
 
 ```Bash
-/path/to/python main.py
+
 ```
 
 ### 命令行接口
@@ -38,7 +38,9 @@ python main.py
 
 - 列出所有记录
 
+```Bash
 python main.py --list
+```
 
 或简写：
 
@@ -46,7 +48,9 @@ python main.py -l
 
 - 添加记录
 
-python main.py --add BOOK_ID TITLE AUTHOR ISBN [BORROWED]
+```Bash
+python main.py --add 
+```
 
 其中：
 
@@ -55,14 +59,6 @@ python main.py --add BOOK_ID TITLE AUTHOR ISBN [BORROWED]
 	•	AUTHOR: 作者姓名。
 	•	ISBN: 图书ISBN号码。
 	•	BORROWED（可选）：借阅日期，格式为YYYY-MM-DD。若图书未被借出，此项可省略。
-
-例如：
-
-python main.py --add B001 "Python Crash Course" "Eric Matthes" "978-1593276034" 2023-04-01
-
-简写：
-
-python main.py -a B001 "Python Crash Course" "Eric Matthes" "978-1593276034" 2023-04-01
 
 删除记录
 
@@ -94,4 +90,4 @@ python main.py -s B001
 
 贡献与反馈
 
-欢迎提出改进建议、报告问题或提交 Pull Request。如有任何疑问或需求，请创建一个 GitHub Issue 或联系项目维护者。
+欢迎提出改进建议、报告问题或提交 Pull Request。如有任何疑问或需求，请创建一个 GitHub Issue 或联系项目维护者。本项目使用LICENSE文件[LICENSE]
