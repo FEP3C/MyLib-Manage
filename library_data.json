@@ -1,0 +1,30 @@
+{
+    "B001": {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "isbn": "9780061120084",
+        "borrowed": "2023-04-01",
+        "returned": null
+    },
+    "B002": {
+        "title": "1984",
+        "author": "George Orwell",
+        "isbn": "9780451524935",
+        "borrowed": null,
+        "returned": null
+    },
+    "B003": {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "isbn": "9781503290563",
+        "borrowed": "2023-03-15",
+        "returned": "2023-04-10"
+    },
+    "B004": {
+        "title": "Clean Code",
+        "author": "Robert C.Martin",
+        "isbn": "9787115216878  ",
+        "borrowed": null,
+        "returned": null
+    }
+}
